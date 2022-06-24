@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <Pane prefHeight="281.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutY="21.0" prefHeight="39.0" prefWidth="426.0" text="Welcome" textAlignment="CENTER" textFill="#a43131" underline="true" wrapText="true">
+               <font>
+                  <Font name="Droid Serif Bold" size="32.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Glow level="0.46">
+                     <input>
+                        <ColorAdjust brightness="0.02" contrast="0.15" />
+                     </input>
+                  </Glow>
+               </effect>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" layoutX="127.0" layoutY="89.0" prefHeight="30.0" prefWidth="172.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <TextField fx:id="userInputField" layoutX="128.0" layoutY="149.0" />
+            <Button fx:id="convertButton" layoutX="170.0" layoutY="219.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Convert">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="1.29" specularConstant="0.0" specularExponent="24.29" surfaceScale="5.67">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>
